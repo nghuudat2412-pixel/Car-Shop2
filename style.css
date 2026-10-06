@@ -1,0 +1,42 @@
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:Arial,Helvetica,sans-serif;line-height:1.6;color:#f5f5f5;background:#0b0b0d}
+a{color:#ff6974}
+a:hover,a:focus{color:#fff}
+header{background:#111114;border-bottom:1px solid #303038;position:sticky;top:0;z-index:10}
+.navbar{max-width:1150px;margin:auto;min-height:72px;padding:0 24px;display:flex;align-items:center;justify-content:space-between}
+.logo{color:#fff;font-size:1.5rem;font-weight:800;letter-spacing:2px;text-decoration:none}
+.logo span{color:#e63946}
+.nav-links{list-style:none;display:flex;gap:28px}
+.nav-links a{text-decoration:none;color:#eee;font-weight:600}
+.nav-links a:hover,.nav-links a:focus{color:#ff6974}
+.hero,.cars-section,.about-section,.contact-section{max-width:1150px;margin:auto;padding:80px 24px}
+.hero{min-height:610px;display:grid;grid-template-columns:1fr 1fr;align-items:center;gap:50px}
+.eyebrow{color:#ff6974;font-size:.8rem;font-weight:800;letter-spacing:3px;margin-bottom:12px}
+h1,h2,h3{line-height:1.2}
+h1{font-size:clamp(2.7rem,6vw,4.6rem);margin-bottom:22px}
+h2{font-size:2.5rem;margin-bottom:18px}
+h3{font-size:1.4rem;margin:8px 0 16px}
+.hero p:not(.eyebrow),.section-heading p:last-child,.about-section p,.contact-section p{color:#b9b9c0}
+.hero p:not(.eyebrow){max-width:520px;margin-bottom:28px}
+.button{display:inline-block;background:#e63946;color:#fff;padding:12px 22px;border-radius:5px;text-decoration:none;font-weight:700}
+.button:hover,.button:focus{background:#c92f3b;color:#fff}
+.hero img,.car-card img,.about-section img{width:100%;object-fit:cover;border-radius:10px}
+.hero img{min-height:390px}
+.cars-section{max-width:none;background:#111114;padding-left:max(24px,calc((100% - 1102px)/2));padding-right:max(24px,calc((100% - 1102px)/2))}
+.section-heading{text-align:center;margin-bottom:45px}
+.car-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:24px}
+.car-card{background:#1a1a1f;border:1px solid #303038;border-radius:10px;overflow:hidden}
+.car-card img{display:block;height:220px}
+.card-content{padding:22px}
+.car-type{color:#ff6974;font-size:.75rem;font-weight:800;letter-spacing:2px}
+.card-content ul{margin:0 0 20px 18px;color:#c4c4ca}
+.price{font-size:1.35rem;font-weight:800;margin-bottom:12px}
+.card-content a{font-weight:700;text-decoration:none}
+.about-section{display:grid;grid-template-columns:1fr 1fr;gap:60px;align-items:center}
+.about-section img{height:360px}
+.about-section p{margin-bottom:16px}
+.contact-section{text-align:center;background:#17171b;max-width:none}
+.contact-section a{font-weight:700}
+footer{text-align:center;padding:30px 24px;color:#9999a2;background:#08080a}
+@media(max-width:800px){.navbar{flex-direction:column;justify-content:center;gap:12px;padding:16px 24px}.nav-links{gap:16px;flex-wrap:wrap;justify-content:center}.hero,.about-section,.car-grid{grid-template-columns:1fr}.hero{padding-top:55px}.hero img{min-height:280px}}
